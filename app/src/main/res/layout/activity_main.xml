@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:orientation="vertical"
+    android:gravity="top">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:gravity="end"
+        android:layout_marginBottom="48dp">
+
+        <!-- Button: navigate to Encryption Activity -->
+        <Button
+            android:id="@+id/btn_go_to_encryption"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:text="EncryptionActivity"
+            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+            android:drawableTint="?attr/colorOnPrimary"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            />
+
+        <!-- Button: navigate to Serialization Activity -->
+        <Button
+            android:id="@+id/btn_go_to_serialization"
+            android:layout_width="wrap_content"
+            android:layout_height="48dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="36dp"
+            android:text="SerializationActivity"
+            android:drawableEnd="@drawable/baseline_arrow_forward_24"
+            android:drawableTint="?attr/colorOnPrimary"
+            android:backgroundTint="?attr/colorPrimaryVariant"
+            android:textAllCaps="false"
+            android:textColor="?attr/colorOnPrimary"
+            />
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="MainActivity"
+        android:gravity="center"
+        android:textSize="30dp"
+        android:layout_marginBottom="32dp"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:gravity="center">
+
+            <!-- Email address label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="4dp"
+                android:textStyle="bold"
+                android:text="Email address"/>
+
+
+            <!-- Email address input -->
+            <EditText
+                android:id="@+id/et_email_address"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"/>
+
+            <!-- Save button -->
+            <Button
+                android:id="@+id/btn_save"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:layout_marginTop="16dp"
+                android:text="Save to preferences"
+                android:textAllCaps="false"/>
+
+            <Button
+                android:id="@+id/btn_load"
+                android:layout_width="wrap_content"
+                android:layout_height="55dp"
+                android:text="Load from preferences"
+                android:textAllCaps="false"
+                android:backgroundTint="@color/teal_700"/>
+
+            <!-- Email address label -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="32dp"
+                android:layout_marginHorizontal="16dp"
+                android:layout_marginBottom="4dp"
+                android:textStyle="bold"
+                android:text="Data loaded from preferences"/>
+
+            <!-- Email address input -->
+            <TextView
+                android:id="@+id/tv_loaded_email"
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+                android:layout_marginHorizontal="16dp"
+                android:textColor="#AC180D"/>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
