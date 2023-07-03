@@ -1,4 +1,3 @@
-# shared_preferences_sample
-Exercise: Use shared prefs, encrypted prefs and kotlin serialization.
+Learn to use SharedPreferences, EncryptedSharedPreferences and kotlinx.serialization.
 
-Refer to comments in the MainActivity class for Task instructions.
+Refer to comments in the MainActivity class within the project for Task instructions.
